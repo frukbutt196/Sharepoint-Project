@@ -6,11 +6,9 @@ const build = require('@microsoft/sp-build-web');
 
 build.initialize(gulp);
 
-gulp.task('default', build.default);
+// ✅ Corrected the gulp tasks
+gulp.task('bundle', () => build.bundle());
+gulp.task('package-solution', () => build.packageSolution());
 
-// ✅ Properly define bundle task
-gulp.task('bundle', build.bundle.bind(build));
-
-// ✅ Properly define package-solution task
-gulp.task('package-solution', build.packageSolution.bind(build));
+gulp.task('default', gulp.series('bundle', 'package-solution'));
 
