@@ -1,0 +1,18 @@
+{
+  "SchemaVersion": 2,
+  "CreatedAt": "2025-02-28T10:48:41.923287281Z",
+  "ArtifactName": "/home/spfx-user",
+  "ArtifactType": "filesystem",
+  "Metadata": {
+    "ImageConfig": {
+      "architecture": "",
+      "created": "0001-01-01T00:00:00Z",
+      "os": "",
+      "rootfs": {
+        "type": "",
+        "diff_ids": null
+      },
+      "config": {}
+    }
+  }
+}
